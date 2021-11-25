@@ -1,0 +1,36 @@
+package co.com.sofka.demo;
+
+import javax.persistence.Entity;
+
+@Entity
+public  class Todo {
+    @Id
+    @GeneratedValue
+    private Long id;
+    private String name;
+    private boolean isCompleted;
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public boolean isCompleted() {
+        return isCompleted;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setCompleted(boolean completed) {
+        isCompleted = completed;
+    }
+}
