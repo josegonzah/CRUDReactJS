@@ -1,9 +1,11 @@
 package co.com.sofka.demo;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.GeneratedValue;
 
 @Entity
-public  class Todo {
+public class Todo {
     @Id
     @GeneratedValue
     private Long id;
